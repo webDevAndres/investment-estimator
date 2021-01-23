@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="calcValue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <main id="main_content">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Investment Estimator Application</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <label for="investment">Investment</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="investment" id="investment">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <label for="rate">Interest Rate %</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="rate" id="rate">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <label for="years">Years</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="years" id="years">
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-2" id="display_result_label"></div>
+                <div class="col-2" id="display_result"></div>
+            </div>
+            <div class="row mt-5 justify-content-center text-center">
+                <div class="col">
+                    <button type="button" id="calculate_value" class="btn btn-primary">Calculate Future Value</button> <br>
+                </div>
+            </div>
+            
+
+        </main>
+    </div>
+</body>
+
+</html>
