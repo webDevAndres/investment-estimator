@@ -15,7 +15,7 @@ var calcFutureValue = function (investment, rate, year) {
         futureValue = futureValue + yearlyInterest;
         html +=" Year=" + i + " Interest=" + yearlyInterest.toFixed(2) + " Value=" + parseInt(futureValue) + "<br>";
     };
-    
+    $("main_container").style.backgroundColor = "white";
     $("main_container").innerHTML = html;
 };
 
