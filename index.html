@@ -22,37 +22,44 @@
                     <h1>Investment Estimator Application</h1>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-3">
-                    <label for="investment">Investment</label>
+                    <label for="investment">Investment:</label>
                 </div>
-                <div class="col-3">
-                    <input type="text" name="investment" id="investment">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <label for="rate">Interest Rate %</label>
-                </div>
-                <div class="col-3">
-                    <input type="text" name="rate" id="rate">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <label for="years">Years</label>
-                </div>
-                <div class="col-3">
-                    <input type="text" name="years" id="years">
-                </div>
-            </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-2" id="display_result_label"></div>
-                <div class="col-2" id="display_result"></div>
-            </div>
-            <div class="row mt-5 justify-content-center text-center">
                 <div class="col">
-                    <button type="button" id="calculate_value" class="btn btn-primary">Calculate Future Value</button> <br>
+                    <input type="text" name="investment" id="investment">
+                    <span id="investment_error">*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="rate">Interest Rate %:</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="rate" id="rate">
+                    <span id="rate_error">*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="years">Years:</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="years" id="years">
+                    <span id="years_error">*</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="years">Result:</label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="result" id="result" disabled>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col offset-3">
+                    <button type="button" id="calculate_value" class="btn btn-primary">Calculate Future Value</button>
                 </div>
             </div>
             
