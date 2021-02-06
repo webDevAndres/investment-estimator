@@ -94,11 +94,23 @@ var processRandomNumber = function() {
     $("result").value = futureValue; 
 };
 
+var getDate = function() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var date = date.getDate();
+    date = (date < 10) ? "0" + date : date;
+    month = (month < 10) ? "0" + month : date;
+    var dateText = "Today is " + month + "/" + date + "/" + year
+
+    return dateText;
+};
 
 
 
 window.onload = function () {
     $("calculate_value").onclick = processEntries;
     $("random_value").onclick = processRandomNumber;
+    $("date").innerHTML = getDate();
     $("investment").focus();
 };
